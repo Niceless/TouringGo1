@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d1eeee">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="#87CEFA"
+        android:layout_below="@+id/viewPager"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:weightSum="1">
+        <Button
+            android:onClick="bktode"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:background="@drawable/border4"
+            android:text="返回"
+            android:textColor="#000000"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textSize="13dp"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:text="修 改 信 息"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="10dp"
+            ></TextView>
+
+        <Button
+            android:onClick="change"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:background="@drawable/border4"
+            android:text="保存"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="姓  名 :"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+            <EditText
+                android:id="@+id/upnick"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:imeOptions="actionDone"
+                android:background="@drawable/border"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:ems="10"
+                >
+            </EditText>
+        </LinearLayout>
+
+        <View android:layout_height="1px"
+            android:layout_width="wrap_content"
+            android:background="#66CCFF"
+            android:layout_marginTop="0dp"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="性  别 :"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                />
+            <EditText
+                android:id="@+id/upsex"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:imeOptions="actionDone"
+                android:background="@drawable/border"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:ems="10"
+                >
+            </EditText>
+        </LinearLayout>
+        <View android:layout_height="1px"
+            android:layout_width="wrap_content"
+            android:background="#66CCFF"
+            android:layout_marginTop="0dp"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="生  日 :"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                />
+            <EditText
+                android:id="@+id/upbirth"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:imeOptions="actionDone"
+                android:background="@drawable/border"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:ems="10"
+                >
+            </EditText>
+        </LinearLayout>
+        <View android:layout_height="1px"
+            android:layout_width="wrap_content"
+            android:background="#66CCFF"
+            android:layout_marginTop="0dp"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="移动电话 :"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                />
+            <EditText
+                android:id="@+id/upphone"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:imeOptions="actionDone"
+                android:background="@drawable/border"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:ems="10"
+                >
+            </EditText>
+        </LinearLayout>
+        <View android:layout_height="1px"
+            android:layout_width="wrap_content"
+            android:background="#66CCFF"
+            android:layout_marginTop="0dp"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="电子邮箱 :"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                />
+            <EditText
+                android:id="@+id/upemail"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:imeOptions="actionDone"
+                android:background="@drawable/border"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:ems="10"
+                >
+            </EditText>
+        </LinearLayout>
+        <View android:layout_height="1px"
+            android:layout_width="wrap_content"
+            android:background="#66CCFF"
+            android:layout_marginTop="0dp"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="联系地址 :"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                />
+            <EditText
+                android:id="@+id/upaddress"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:imeOptions="actionDone"
+                android:background="@drawable/border"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:ems="10"
+                >
+            </EditText>
+        </LinearLayout>
+        <View android:layout_height="1px"
+            android:layout_width="wrap_content"
+            android:background="#66CCFF"
+            android:layout_marginTop="0dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
