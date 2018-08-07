@@ -50,7 +50,7 @@ import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 
 public class MyInfo extends AppCompatActivity {
     private TextView myUser;
-
+    System.out.println(5555);
     User user;
     private ImageView img;
     private File mFile;
