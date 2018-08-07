@@ -15,4 +15,5 @@ public class Navigation extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
     }
+    System.out.println(555);	
 }
